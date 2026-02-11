@@ -91,7 +91,8 @@ p {
 <div class="container hidden" id="lock">
   <h2>🎁 Birthday Surprise</h2>
   <p>Enter the PIN 🤍</p>
-  <input type="password" id="pin" placeholder="•••">
+  <small>Hint: Where we met.</small></p>
+  <input type="password" id="pin" placeholder="•••••••">
   <br>
   <button onclick="unlock()">Open</button>
 </div>
@@ -110,7 +111,7 @@ p {
 
 <script>
 const message = `Dear,
-Suhani 🤍
+Katushi 🤍
 
 Happy Birthday 🎂
 
@@ -148,7 +149,7 @@ function showPin() {
 }
 
 function unlock() {
-  if (document.getElementById("pin").value === "486") {
+  if (document.getElementById("pin").value === "Airport") {
     document.getElementById("lock").classList.add("hidden");
     document.getElementById("card").classList.remove("hidden");
     typeText();
@@ -168,7 +169,3 @@ function typeText() {
 
 </body>
 </html>
-
-<!-- deploy refresh -->
-
-
